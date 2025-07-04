@@ -7,5 +7,6 @@ namespace PieShop.Models
         IEnumerable<Pie> AllPies { get; }
         IEnumerable<Pie> PiesOfTheWeek { get; }
         Pie? GetPieByID(int id);
+        IEnumerable<Pie> SearchPies(string searchQuery);
     }
 }
