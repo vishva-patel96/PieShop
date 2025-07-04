@@ -28,6 +28,10 @@ namespace PieShop.Controllers
             }
             return View(pie);
         }
+        public IActionResult Search()
+        {
+            return View();
+        }
         //public ViewResult List(string category)
         //{
         //    IEnumerable<Pie> pies;

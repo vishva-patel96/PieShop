@@ -30,7 +30,7 @@ namespace PieShop.Controllers.Api
             return Ok(_pieRepository.AllPies.Where(p =>p.PieId == id));
         }
         [HttpPost]
-        public IActionResult SearchPies([Frombody] string searchQuery)
+        public IActionResult SearchPies([FromBody] string searchQuery)
         {
             IEnumerable<Pie> pies = new List<Pie>();
             if(!string.IsNullOrEmpty(searchQuery))
